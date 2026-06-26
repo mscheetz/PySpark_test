@@ -24,7 +24,7 @@ Learning project demonstrating Apache Spark with Python (PySpark). Two example s
    ```bash
    python3 -m venv sparkenv
    source sparkenv/bin/activate
-   pip install pyspark
+   pip install -r requirements.txt
    ```
 
 2. Ensure Java is installed (Spark requires Java 8/11/17).   
