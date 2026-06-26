@@ -221,6 +221,8 @@ __marimo__/
 
 metastore_db/
 sample_sales/
-sparkenv/
+env/
 
 .derby.log
+
+.vscode/
