@@ -46,28 +46,8 @@ python src/simple.py      # basic demo
 python src/advanced.py    # sales analytics demo
 ```
 
-## Starting Spark (Standalone Cluster)
-
-To run Spark as a standalone master/worker cluster in a separate terminal:
+## Tests
 
 ```bash
-source sparkenv/bin/activate
-spark-class org.apache.spark.deploy.master.Master
+pytest -v
 ```
-
-Then in another terminal, start a worker that connects to the master:
-
-```bash
-source sparkenv/bin/activate
-spark-class org.apache.spark.deploy.worker.Worker spark://<hostname>:7077
-```
-
-Replace `<hostname>` with the master host printed by the master process (commonly `localhost`).
-
-To submit a script against the running cluster, change the master URL in the script or use `spark-submit`:
-
-```bash
-spark-submit --master spark://localhost:7077 advanced.py
-```
-
-For quick local testing (default in these scripts), no cluster is needed - `master("local[*]")` runs Spark in-process.
