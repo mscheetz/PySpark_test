@@ -221,6 +221,7 @@ __marimo__/
 
 metastore_db/
 sample_sales/
+multi_data/
 env/
 
 .derby.log
