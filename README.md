@@ -1,11 +1,12 @@
 # PySpark_Test
 
-Learning project demonstrating Apache Spark with Python (PySpark). Two example scripts cover basic DataFrame usage and a more advanced sales-analytics workload using both DataFrame API and Spark SQL.
+Learning project demonstrating Apache Spark with Python (PySpark). Three example scripts cover basic DataFrame usage, a more advanced sales-analytics workload, and real-world enterprise workload using both DataFrame API and Spark SQL.
 
 ## Overview
 
 - **`simple.py`** - Minimal PySpark example. Creates a small in-memory DataFrame, computes a sum, and prints the rows.
 - **`advanced.py`** - Sales analytics pipeline. Generates 1M synthetic sales records (or loads them from a cached Parquet dataset in `sample_sales/`), then runs aggregation queries via the DataFrame API and Spark SQL. Uses Hive support for table registration.
+- **`multi.py`** - Enterprise analytics example. Creates four datasets representing customers (CRM), products (catalog), orders (ERP), and web events (clickstream), stores them in multiple formats (CSV, JSON, Parquet), then loads them into Spark to perform cross-source SQL joins, aggregations, customer engagement analysis, and revenue reporting.
 
 ## Quick start
    Ensure Java is installed (Spark requires Java 8/11/17).   
