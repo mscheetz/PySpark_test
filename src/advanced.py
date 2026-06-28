@@ -29,7 +29,7 @@ def load_or_create_data(spark, data_dir=DATA_DIR, row_count=N):
     sales.write.mode("overwrite").parquet(data_dir)
 
     print("Reloading saved data...")
-    sales = spark.read.parquet(data_dir)
+    return spark.read.parquet(data_dir)    
 
 def prepare_view(sales):
     sales.cache()

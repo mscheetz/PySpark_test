@@ -40,6 +40,11 @@ Advanced sample
 python src/advanced.py
 ```
 
+Multi-Data Types sample
+```bash
+python src/multi.py
+```
+
 ## Tests
 
 ```bash
